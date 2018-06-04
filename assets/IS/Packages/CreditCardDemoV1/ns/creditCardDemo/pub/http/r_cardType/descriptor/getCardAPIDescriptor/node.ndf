@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="node_type">restDescriptor</value>
+  <value name="node_subtype">restv2Descriptor</value>
+  <value name="node_nsName">creditCardDemo.pub.http.r_cardType.descriptor:getCardAPIDescriptor</value>
+  <value name="node_pkg">CreditCardDemoV1</value>
+  <value name="is_public">false</value>
+  <record name="generalInfo" javaclass="com.wm.util.Values">
+    <value name="specVersion">2.0</value>
+    <value name="hostName">DESKTOP-60L8PV0:5555</value>
+    <value name="basePath">/restv2</value>
+    <array name="schemes" type="value" depth="1">
+      <value>http</value>
+    </array>
+    <array name="consumes" type="value" depth="1">
+      <value>application/json</value>
+    </array>
+    <array name="produces" type="value" depth="1">
+      <value>application/json</value>
+    </array>
+  </record>
+  <record name="appInfo" javaclass="com.wm.util.Values">
+    <value name="appVersion">1.0</value>
+    <value name="description">getCardDetailsAPI</value>
+    <value name="title">getCardDetailsAPI</value>
+    <null name="termsOfService"/>
+    <record name="contact" javaclass="com.wm.util.Values">
+      <null name="contactName"/>
+      <null name="contactUrl"/>
+      <null name="contactEmail"/>
+    </record>
+    <record name="license" javaclass="com.wm.util.Values">
+      <null name="licenseName"/>
+      <null name="licenseUrl"/>
+    </record>
+  </record>
+  <null name="sourceUri"/>
+  <null name="swaggerUrl"/>
+  <Boolean name="modifiable">true</Boolean>
+  <record name="restResources" javaclass="com.wm.util.Values">
+    <record name="getCardDetailsAPI" javaclass="com.wm.util.Values">
+      <value name="nsName">getCardDetailsAPI</value>
+      <value name="path">getCardDetailsAPI</value>
+      <null name="suffix"/>
+      <record name="operations" javaclass="com.wm.util.Values">
+        <record name="POST" javaclass="com.wm.util.Values">
+          <value name="operationType">POST</value>
+          <value name="nsName">getCardDetailsAPI_POST</value>
+          <value name="description"></value>
+          <array name="requiredDefinitions" type="value" depth="1">
+            <value>creditCardDemo.doc:cardTxns</value>
+            <value>getCardDetailsAPI_POST.card</value>
+            <value>getCardDetailsAPI_POST.transactions</value>
+            <value>getCardDetailsAPI_POST_$response</value>
+          </array>
+          <record name="parameters" javaclass="com.wm.util.Values">
+            <record name="cardNumber" javaclass="com.wm.util.Values">
+              <value name="name">cardNumber</value>
+              <value name="source">FORMDATA</value>
+              <value name="type">STRING</value>
+              <value name="description"></value>
+              <Boolean name="isRequired">true</Boolean>
+              <Boolean name="isArray">false</Boolean>
+              <null name="defaultValue"/>
+              <null name="refDefinition"/>
+              <null name="definitionName"/>
+              <Boolean name="includeInRad">true</Boolean>
+            </record>
+            <record name="storeName" javaclass="com.wm.util.Values">
+              <value name="name">storeName</value>
+              <value name="source">FORMDATA</value>
+              <value name="type">STRING</value>
+              <value name="description"></value>
+              <Boolean name="isRequired">true</Boolean>
+              <Boolean name="isArray">false</Boolean>
+              <null name="defaultValue"/>
+              <null name="refDefinition"/>
+              <null name="definitionName"/>
+              <Boolean name="includeInRad">true</Boolean>
+            </record>
+          </record>
+          <record name="responseParam" javaclass="com.wm.util.Values">
+            <value name="name">reseponse</value>
+            <value name="source">BODY</value>
+            <value name="type">REFERENCE</value>
+            <null name="description"/>
+            <Boolean name="isRequired">true</Boolean>
+            <Boolean name="isArray">false</Boolean>
+            <null name="defaultValue"/>
+            <value name="refDefinition">getCardDetailsAPI_POST_$response</value>
+            <null name="definitionName"/>
+            <Boolean name="includeInRad">true</Boolean>
+          </record>
+          <record name="responses" javaclass="com.wm.util.Values">
+            <record name="200" javaclass="com.wm.util.Values">
+              <value name="statusCode">200</value>
+              <value name="description">Successful</value>
+              <Boolean name="returnOutput">true</Boolean>
+            </record>
+            <record name="401" javaclass="com.wm.util.Values">
+              <value name="statusCode">401</value>
+              <value name="description">Access Denied</value>
+              <Boolean name="returnOutput">false</Boolean>
+            </record>
+          </record>
+        </record>
+        <record name="GET" javaclass="com.wm.util.Values">
+          <value name="operationType">GET</value>
+          <value name="nsName">getCardDetailsAPI_GET</value>
+          <value name="description"></value>
+          <array name="requiredDefinitions" type="value" depth="1">
+            <value>creditCardDemo.doc:cardTxns</value>
+            <value>creditCardDemo.doc:cardTxns</value>
+            <value>getCardDetailsAPI_GET.card</value>
+            <value>getCardDetailsAPI_GET.transactions</value>
+            <value>getCardDetailsAPI_GET_$response</value>
+          </array>
+          <record name="parameters" javaclass="com.wm.util.Values">
+            <record name="cardNumber" javaclass="com.wm.util.Values">
+              <value name="name">cardNumber</value>
+              <value name="source">FORMDATA</value>
+              <value name="type">STRING</value>
+              <value name="description"></value>
+              <Boolean name="isRequired">true</Boolean>
+              <Boolean name="isArray">false</Boolean>
+              <null name="defaultValue"/>
+              <null name="refDefinition"/>
+              <null name="definitionName"/>
+              <Boolean name="includeInRad">true</Boolean>
+            </record>
+            <record name="storeName" javaclass="com.wm.util.Values">
+              <value name="name">storeName</value>
+              <value name="source">FORMDATA</value>
+              <value name="type">STRING</value>
+              <value name="description"></value>
+              <Boolean name="isRequired">true</Boolean>
+              <Boolean name="isArray">false</Boolean>
+              <null name="defaultValue"/>
+              <null name="refDefinition"/>
+              <null name="definitionName"/>
+              <Boolean name="includeInRad">true</Boolean>
+            </record>
+          </record>
+          <record name="responseParam" javaclass="com.wm.util.Values">
+            <value name="name">reseponse</value>
+            <value name="source">BODY</value>
+            <value name="type">REFERENCE</value>
+            <null name="description"/>
+            <Boolean name="isRequired">true</Boolean>
+            <Boolean name="isArray">false</Boolean>
+            <null name="defaultValue"/>
+            <value name="refDefinition">getCardDetailsAPI_GET_$response</value>
+            <null name="definitionName"/>
+            <Boolean name="includeInRad">true</Boolean>
+          </record>
+          <record name="responses" javaclass="com.wm.util.Values">
+            <record name="200" javaclass="com.wm.util.Values">
+              <value name="statusCode">200</value>
+              <value name="description">Successful</value>
+              <Boolean name="returnOutput">true</Boolean>
+            </record>
+            <record name="401" javaclass="com.wm.util.Values">
+              <value name="statusCode">401</value>
+              <value name="description">Access Denied</value>
+              <Boolean name="returnOutput">false</Boolean>
+            </record>
+          </record>
+        </record>
+      </record>
+    </record>
+  </record>
+  <record name="restDefinitions" javaclass="com.wm.util.Values">
+    <record name="getCardDetailsAPI_POST.transactions" javaclass="com.wm.util.Values">
+      <value name="name">transactions</value>
+      <value name="nsName">getCardDetailsAPI_POST.transactions</value>
+      <Boolean name="autoGenerated">true</Boolean>
+      <Boolean name="recursive">false</Boolean>
+      <null name="description"/>
+      <record name="parameters" javaclass="com.wm.util.Values">
+        <record name="date" javaclass="com.wm.util.Values">
+          <value name="name">date</value>
+          <value name="source">FORMDATA</value>
+          <value name="type">STRING</value>
+          <null name="description"/>
+          <Boolean name="isRequired">true</Boolean>
+          <Boolean name="isArray">false</Boolean>
+          <null name="defaultValue"/>
+          <null name="refDefinition"/>
+          <null name="definitionName"/>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+        <record name="transactionDetails" javaclass="com.wm.util.Values">
+          <value name="name">transactionDetails</value>
+          <value name="source">FORMDATA</value>
+          <value name="type">STRING</value>
+          <null name="description"/>
+          <Boolean name="isRequired">true</Boolean>
+          <Boolean name="isArray">false</Boolean>
+          <null name="defaultValue"/>
+          <null name="refDefinition"/>
+          <null name="definitionName"/>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+        <record name="listedAs" javaclass="com.wm.util.Values">
+          <value name="name">listedAs</value>
+          <value name="source">FORMDATA</value>
+          <value name="type">STRING</value>
+          <null name="description"/>
+          <Boolean name="isRequired">true</Boolean>
+          <Boolean name="isArray">false</Boolean>
+          <null name="defaultValue"/>
+          <null name="refDefinition"/>
+          <null name="definitionName"/>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+        <record name="amount" javaclass="com.wm.util.Values">
+          <value name="name">amount</value>
+          <value name="source">FORMDATA</value>
+          <value name="type">STRING</value>
+          <null name="description"/>
+          <Boolean name="isRequired">true</Boolean>
+          <Boolean name="isArray">false</Boolean>
+          <null name="defaultValue"/>
+          <null name="refDefinition"/>
+          <null name="definitionName"/>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+      </record>
+    </record>
+    <record name="getCardDetailsAPI_GET.transactions" javaclass="com.wm.util.Values">
+      <value name="name">transactions</value>
+      <value name="nsName">getCardDetailsAPI_GET.transactions</value>
+      <Boolean name="autoGenerated">true</Boolean>
+      <Boolean name="recursive">false</Boolean>
+      <null name="description"/>
+      <record name="parameters" javaclass="com.wm.util.Values">
+        <record name="date" javaclass="com.wm.util.Values">
+          <value name="name">date</value>
+          <value name="source">FORMDATA</value>
+          <value name="type">STRING</value>
+          <null name="description"/>
+          <Boolean name="isRequired">true</Boolean>
+          <Boolean name="isArray">false</Boolean>
+          <null name="defaultValue"/>
+          <null name="refDefinition"/>
+          <null name="definitionName"/>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+        <record name="transactionDetails" javaclass="com.wm.util.Values">
+          <value name="name">transactionDetails</value>
+          <value name="source">FORMDATA</value>
+          <value name="type">STRING</value>
+          <null name="description"/>
+          <Boolean name="isRequired">true</Boolean>
+          <Boolean name="isArray">false</Boolean>
+          <null name="defaultValue"/>
+          <null name="refDefinition"/>
+          <null name="definitionName"/>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+        <record name="listedAs" javaclass="com.wm.util.Values">
+          <value name="name">listedAs</value>
+          <value name="source">FORMDATA</value>
+          <value name="type">STRING</value>
+          <null name="description"/>
+          <Boolean name="isRequired">true</Boolean>
+          <Boolean name="isArray">false</Boolean>
+          <null name="defaultValue"/>
+          <null name="refDefinition"/>
+          <null name="definitionName"/>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+        <record name="amount" javaclass="com.wm.util.Values">
+          <value name="name">amount</value>
+          <value name="source">FORMDATA</value>
+          <value name="type">STRING</value>
+          <null name="description"/>
+          <Boolean name="isRequired">true</Boolean>
+          <Boolean name="isArray">false</Boolean>
+          <null name="defaultValue"/>
+          <null name="refDefinition"/>
+          <null name="definitionName"/>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+      </record>
+    </record>
+    <record name="getCardDetailsAPI_POST.card" javaclass="com.wm.util.Values">
+      <value name="name">card</value>
+      <value name="nsName">getCardDetailsAPI_POST.card</value>
+      <Boolean name="autoGenerated">true</Boolean>
+      <Boolean name="recursive">false</Boolean>
+      <null name="description"/>
+      <record name="parameters" javaclass="com.wm.util.Values">
+        <record name="firstName" javaclass="com.wm.util.Values">
+          <value name="name">firstName</value>
+          <value name="source">FORMDATA</value>
+          <value name="type">STRING</value>
+          <null name="description"/>
+          <Boolean name="isRequired">true</Boolean>
+          <Boolean name="isArray">false</Boolean>
+          <null name="defaultValue"/>
+          <null name="refDefinition"/>
+          <null name="definitionName"/>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+        <record name="surname" javaclass="com.wm.util.Values">
+          <value name="name">surname</value>
+          <value name="source">FORMDATA</value>
+          <value name="type">STRING</value>
+          <null name="description"/>
+          <Boolean name="isRequired">true</Boolean>
+          <Boolean name="isArray">false</Boolean>
+          <null name="defaultValue"/>
+          <null name="refDefinition"/>
+          <null name="definitionName"/>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+        <record name="type" javaclass="com.wm.util.Values">
+          <value name="name">type</value>
+          <value name="source">FORMDATA</value>
+          <value name="type">STRING</value>
+          <null name="description"/>
+          <Boolean name="isRequired">true</Boolean>
+          <Boolean name="isArray">false</Boolean>
+          <null name="defaultValue"/>
+          <null name="refDefinition"/>
+          <null name="definitionName"/>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+        <record name="number" javaclass="com.wm.util.Values">
+          <value name="name">number</value>
+          <value name="source">FORMDATA</value>
+          <value name="type">STRING</value>
+          <null name="description"/>
+          <Boolean name="isRequired">true</Boolean>
+          <Boolean name="isArray">false</Boolean>
+          <null name="defaultValue"/>
+          <null name="refDefinition"/>
+          <null name="definitionName"/>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+        <record name="creditLimit" javaclass="com.wm.util.Values">
+          <value name="name">creditLimit</value>
+          <value name="source">FORMDATA</value>
+          <value name="type">STRING</value>
+          <null name="description"/>
+          <Boolean name="isRequired">true</Boolean>
+          <Boolean name="isArray">false</Boolean>
+          <null name="defaultValue"/>
+          <null name="refDefinition"/>
+          <null name="definitionName"/>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+        <record name="availableLimit" javaclass="com.wm.util.Values">
+          <value name="name">availableLimit</value>
+          <value name="source">FORMDATA</value>
+          <value name="type">STRING</value>
+          <null name="description"/>
+          <Boolean name="isRequired">true</Boolean>
+          <Boolean name="isArray">false</Boolean>
+          <null name="defaultValue"/>
+          <null name="refDefinition"/>
+          <null name="definitionName"/>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+        <record name="totalPending" javaclass="com.wm.util.Values">
+          <value name="name">totalPending</value>
+          <value name="source">FORMDATA</value>
+          <value name="type">STRING</value>
+          <null name="description"/>
+          <Boolean name="isRequired">true</Boolean>
+          <Boolean name="isArray">false</Boolean>
+          <null name="defaultValue"/>
+          <null name="refDefinition"/>
+          <null name="definitionName"/>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+        <record name="balance" javaclass="com.wm.util.Values">
+          <value name="name">balance</value>
+          <value name="source">FORMDATA</value>
+          <value name="type">STRING</value>
+          <null name="description"/>
+          <Boolean name="isRequired">true</Boolean>
+          <Boolean name="isArray">false</Boolean>
+          <null name="defaultValue"/>
+          <null name="refDefinition"/>
+          <null name="definitionName"/>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+        <record name="transactions" javaclass="com.wm.util.Values">
+          <value name="name">transactions</value>
+          <value name="source">BODY</value>
+          <value name="type">REFERENCE</value>
+          <null name="description"/>
+          <Boolean name="isRequired">false</Boolean>
+          <Boolean name="isArray">true</Boolean>
+          <null name="defaultValue"/>
+          <value name="refDefinition">getCardDetailsAPI_POST.transactions</value>
+          <value name="definitionName">transactions</value>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+      </record>
+    </record>
+    <record name="getCardDetailsAPI_GET.card" javaclass="com.wm.util.Values">
+      <value name="name">card</value>
+      <value name="nsName">getCardDetailsAPI_GET.card</value>
+      <Boolean name="autoGenerated">true</Boolean>
+      <Boolean name="recursive">false</Boolean>
+      <null name="description"/>
+      <record name="parameters" javaclass="com.wm.util.Values">
+        <record name="firstName" javaclass="com.wm.util.Values">
+          <value name="name">firstName</value>
+          <value name="source">FORMDATA</value>
+          <value name="type">STRING</value>
+          <null name="description"/>
+          <Boolean name="isRequired">true</Boolean>
+          <Boolean name="isArray">false</Boolean>
+          <null name="defaultValue"/>
+          <null name="refDefinition"/>
+          <null name="definitionName"/>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+        <record name="surname" javaclass="com.wm.util.Values">
+          <value name="name">surname</value>
+          <value name="source">FORMDATA</value>
+          <value name="type">STRING</value>
+          <null name="description"/>
+          <Boolean name="isRequired">true</Boolean>
+          <Boolean name="isArray">false</Boolean>
+          <null name="defaultValue"/>
+          <null name="refDefinition"/>
+          <null name="definitionName"/>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+        <record name="type" javaclass="com.wm.util.Values">
+          <value name="name">type</value>
+          <value name="source">FORMDATA</value>
+          <value name="type">STRING</value>
+          <null name="description"/>
+          <Boolean name="isRequired">true</Boolean>
+          <Boolean name="isArray">false</Boolean>
+          <null name="defaultValue"/>
+          <null name="refDefinition"/>
+          <null name="definitionName"/>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+        <record name="number" javaclass="com.wm.util.Values">
+          <value name="name">number</value>
+          <value name="source">FORMDATA</value>
+          <value name="type">STRING</value>
+          <null name="description"/>
+          <Boolean name="isRequired">true</Boolean>
+          <Boolean name="isArray">false</Boolean>
+          <null name="defaultValue"/>
+          <null name="refDefinition"/>
+          <null name="definitionName"/>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+        <record name="creditLimit" javaclass="com.wm.util.Values">
+          <value name="name">creditLimit</value>
+          <value name="source">FORMDATA</value>
+          <value name="type">STRING</value>
+          <null name="description"/>
+          <Boolean name="isRequired">true</Boolean>
+          <Boolean name="isArray">false</Boolean>
+          <null name="defaultValue"/>
+          <null name="refDefinition"/>
+          <null name="definitionName"/>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+        <record name="availableLimit" javaclass="com.wm.util.Values">
+          <value name="name">availableLimit</value>
+          <value name="source">FORMDATA</value>
+          <value name="type">STRING</value>
+          <null name="description"/>
+          <Boolean name="isRequired">true</Boolean>
+          <Boolean name="isArray">false</Boolean>
+          <null name="defaultValue"/>
+          <null name="refDefinition"/>
+          <null name="definitionName"/>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+        <record name="totalPending" javaclass="com.wm.util.Values">
+          <value name="name">totalPending</value>
+          <value name="source">FORMDATA</value>
+          <value name="type">STRING</value>
+          <null name="description"/>
+          <Boolean name="isRequired">true</Boolean>
+          <Boolean name="isArray">false</Boolean>
+          <null name="defaultValue"/>
+          <null name="refDefinition"/>
+          <null name="definitionName"/>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+        <record name="balance" javaclass="com.wm.util.Values">
+          <value name="name">balance</value>
+          <value name="source">FORMDATA</value>
+          <value name="type">STRING</value>
+          <null name="description"/>
+          <Boolean name="isRequired">true</Boolean>
+          <Boolean name="isArray">false</Boolean>
+          <null name="defaultValue"/>
+          <null name="refDefinition"/>
+          <null name="definitionName"/>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+        <record name="transactions" javaclass="com.wm.util.Values">
+          <value name="name">transactions</value>
+          <value name="source">BODY</value>
+          <value name="type">REFERENCE</value>
+          <null name="description"/>
+          <Boolean name="isRequired">false</Boolean>
+          <Boolean name="isArray">true</Boolean>
+          <null name="defaultValue"/>
+          <value name="refDefinition">getCardDetailsAPI_GET.transactions</value>
+          <value name="definitionName">transactions</value>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+      </record>
+    </record>
+    <record name="creditCardDemo.doc:cardTxns" javaclass="com.wm.util.Values">
+      <value name="name">cardTxns</value>
+      <value name="nsName">creditCardDemo.doc:cardTxns</value>
+      <Boolean name="autoGenerated">false</Boolean>
+      <Boolean name="recursive">false</Boolean>
+      <null name="description"/>
+      <record name="parameters" javaclass="com.wm.util.Values">
+        <record name="card" javaclass="com.wm.util.Values">
+          <value name="name">card</value>
+          <value name="source">BODY</value>
+          <value name="type">REFERENCE</value>
+          <null name="description"/>
+          <Boolean name="isRequired">true</Boolean>
+          <Boolean name="isArray">false</Boolean>
+          <null name="defaultValue"/>
+          <value name="refDefinition">getCardDetailsAPI_GET.card</value>
+          <value name="definitionName">card</value>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+      </record>
+    </record>
+    <record name="getCardDetailsAPI_GET_$response" javaclass="com.wm.util.Values">
+      <value name="name">getCardDetailsAPI_GET_$response</value>
+      <value name="nsName">getCardDetailsAPI_GET_$response</value>
+      <Boolean name="autoGenerated">true</Boolean>
+      <Boolean name="recursive">false</Boolean>
+      <null name="description"/>
+      <record name="parameters" javaclass="com.wm.util.Values">
+        <record name="cardTransactions" javaclass="com.wm.util.Values">
+          <value name="name">cardTransactions</value>
+          <value name="source">BODY</value>
+          <value name="type">REFERENCE</value>
+          <value name="description"></value>
+          <Boolean name="isRequired">true</Boolean>
+          <Boolean name="isArray">false</Boolean>
+          <null name="defaultValue"/>
+          <value name="refDefinition">creditCardDemo.doc:cardTxns</value>
+          <value name="definitionName">cardTxns</value>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+      </record>
+    </record>
+    <record name="getCardDetailsAPI_POST_$response" javaclass="com.wm.util.Values">
+      <value name="name">getCardDetailsAPI_POST_$response</value>
+      <value name="nsName">getCardDetailsAPI_POST_$response</value>
+      <Boolean name="autoGenerated">true</Boolean>
+      <Boolean name="recursive">false</Boolean>
+      <null name="description"/>
+      <record name="parameters" javaclass="com.wm.util.Values">
+        <record name="cardTransactions" javaclass="com.wm.util.Values">
+          <value name="name">cardTransactions</value>
+          <value name="source">BODY</value>
+          <value name="type">REFERENCE</value>
+          <value name="description"></value>
+          <Boolean name="isRequired">true</Boolean>
+          <Boolean name="isArray">false</Boolean>
+          <null name="defaultValue"/>
+          <value name="refDefinition">creditCardDemo.doc:cardTxns</value>
+          <value name="definitionName">cardTxns</value>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+      </record>
+    </record>
+  </record>
+  <null name="radSource"/>
+  <array name="generatedDoctypes" type="record" depth="1">
+  </array>
+  <array name="generatedServices" type="record" depth="1">
+  </array>
+  <array name="generatedRestResources" type="record" depth="1">
+  </array>
+  <array name="resourceNodeNSNames" type="value" depth="1">
+    <value>creditCardDemo.pub.http.r_cardType:getCardDetailsAPI</value>
+  </array>
+</Values>

@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <record name="schema" javaclass="com.wm.util.Values">
+    <value name="node_type">schema</value>
+    <value name="node_subtype">unknown</value>
+    <value name="node_nsName">creditCardDemo.doc:schema_cardTxns</value>
+    <value name="node_pkg">CreditCardDemo</value>
+    <value name="is_public">false</value>
+    <value name="contentType">3</value>
+    <record name="attributes" javaclass="com.wm.util.Values">
+      <list name="table">
+      </list>
+    </record>
+    <record name="elements" javaclass="com.wm.util.Values">
+      <list name="table">
+        <record javaclass="com.wm.util.Values">
+          <value name="tagType">element</value>
+          <value name="name">card</value>
+          <record name="type" javaclass="com.wm.util.Values">
+            <value name="contentType">2</value>
+            <value name="internalType">instance</value>
+            <list name="elements">
+              <record javaclass="com.wm.util.Values">
+                <value name="tagType">element</value>
+                <value name="name">firstName</value>
+                <record name="type" javaclass="com.wm.util.Values">
+                  <value name="contentType">1</value>
+                  <value name="internalType">reference</value>
+                  <value name="dataTypeVersion">dtVersion2</value>
+                  <array name="targetNames" type="record" depth="1">
+                    <record javaclass="com.wm.util.Values">
+                      <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+                      <value name="ncName">string</value>
+                    </record>
+                  </array>
+                </record>
+                <value name="form">true</value>
+                <value name="internalType">instance</value>
+              </record>
+              <record javaclass="com.wm.util.Values">
+                <value name="tagType">element</value>
+                <value name="name">surname</value>
+                <record name="type" javaclass="com.wm.util.Values">
+                  <value name="contentType">1</value>
+                  <value name="internalType">reference</value>
+                  <value name="dataTypeVersion">dtVersion2</value>
+                  <array name="targetNames" type="record" depth="1">
+                    <record javaclass="com.wm.util.Values">
+                      <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+                      <value name="ncName">string</value>
+                    </record>
+                  </array>
+                </record>
+                <value name="form">true</value>
+                <value name="internalType">instance</value>
+              </record>
+              <record javaclass="com.wm.util.Values">
+                <value name="tagType">element</value>
+                <value name="name">type</value>
+                <record name="type" javaclass="com.wm.util.Values">
+                  <value name="contentType">1</value>
+                  <value name="internalType">reference</value>
+                  <value name="dataTypeVersion">dtVersion2</value>
+                  <array name="targetNames" type="record" depth="1">
+                    <record javaclass="com.wm.util.Values">
+                      <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+                      <value name="ncName">string</value>
+                    </record>
+                  </array>
+                </record>
+                <value name="form">true</value>
+                <value name="internalType">instance</value>
+              </record>
+              <record javaclass="com.wm.util.Values">
+                <value name="tagType">element</value>
+                <value name="name">number</value>
+                <record name="type" javaclass="com.wm.util.Values">
+                  <value name="contentType">1</value>
+                  <value name="internalType">reference</value>
+                  <value name="dataTypeVersion">dtVersion2</value>
+                  <array name="targetNames" type="record" depth="1">
+                    <record javaclass="com.wm.util.Values">
+                      <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+                      <value name="ncName">string</value>
+                    </record>
+                  </array>
+                </record>
+                <value name="form">true</value>
+                <value name="internalType">instance</value>
+              </record>
+              <record javaclass="com.wm.util.Values">
+                <value name="tagType">element</value>
+                <value name="name">creditLimit</value>
+                <record name="type" javaclass="com.wm.util.Values">
+                  <value name="contentType">1</value>
+                  <value name="internalType">reference</value>
+                  <value name="dataTypeVersion">dtVersion2</value>
+                  <array name="targetNames" type="record" depth="1">
+                    <record javaclass="com.wm.util.Values">
+                      <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+                      <value name="ncName">double</value>
+                    </record>
+                  </array>
+                </record>
+                <value name="form">true</value>
+                <value name="internalType">instance</value>
+              </record>
+              <record javaclass="com.wm.util.Values">
+                <value name="tagType">element</value>
+                <value name="name">availableLimit</value>
+                <record name="type" javaclass="com.wm.util.Values">
+                  <value name="contentType">1</value>
+                  <value name="internalType">reference</value>
+                  <value name="dataTypeVersion">dtVersion2</value>
+                  <array name="targetNames" type="record" depth="1">
+                    <record javaclass="com.wm.util.Values">
+                      <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+                      <value name="ncName">double</value>
+                    </record>
+                  </array>
+                </record>
+                <value name="form">true</value>
+                <value name="internalType">instance</value>
+              </record>
+              <record javaclass="com.wm.util.Values">
+                <value name="tagType">element</value>
+                <value name="name">totalPending</value>
+                <record name="type" javaclass="com.wm.util.Values">
+                  <value name="contentType">1</value>
+                  <value name="internalType">reference</value>
+                  <value name="dataTypeVersion">dtVersion2</value>
+                  <array name="targetNames" type="record" depth="1">
+                    <record javaclass="com.wm.util.Values">
+                      <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+                      <value name="ncName">double</value>
+                    </record>
+                  </array>
+                </record>
+                <value name="form">true</value>
+                <value name="internalType">instance</value>
+              </record>
+              <record javaclass="com.wm.util.Values">
+                <value name="tagType">element</value>
+                <value name="name">balance</value>
+                <record name="type" javaclass="com.wm.util.Values">
+                  <value name="contentType">1</value>
+                  <value name="internalType">reference</value>
+                  <value name="dataTypeVersion">dtVersion2</value>
+                  <array name="targetNames" type="record" depth="1">
+                    <record javaclass="com.wm.util.Values">
+                      <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+                      <value name="ncName">double</value>
+                    </record>
+                  </array>
+                </record>
+                <value name="form">true</value>
+                <value name="internalType">instance</value>
+              </record>
+              <record javaclass="com.wm.util.Values">
+                <value name="tagType">element</value>
+                <value name="name">transactions</value>
+                <record name="type" javaclass="com.wm.util.Values">
+                  <value name="contentType">2</value>
+                  <value name="internalType">instance</value>
+                  <list name="elements">
+                    <record javaclass="com.wm.util.Values">
+                      <value name="tagType">element</value>
+                      <value name="name">date</value>
+                      <record name="type" javaclass="com.wm.util.Values">
+                        <value name="contentType">1</value>
+                        <value name="internalType">reference</value>
+                        <value name="dataTypeVersion">dtVersion2</value>
+                        <array name="targetNames" type="record" depth="1">
+                          <record javaclass="com.wm.util.Values">
+                            <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+                            <value name="ncName">dateTime</value>
+                          </record>
+                        </array>
+                      </record>
+                      <value name="form">true</value>
+                      <value name="internalType">instance</value>
+                    </record>
+                    <record javaclass="com.wm.util.Values">
+                      <value name="tagType">element</value>
+                      <value name="name">transactionDetails</value>
+                      <record name="type" javaclass="com.wm.util.Values">
+                        <value name="contentType">1</value>
+                        <value name="internalType">reference</value>
+                        <value name="dataTypeVersion">dtVersion2</value>
+                        <array name="targetNames" type="record" depth="1">
+                          <record javaclass="com.wm.util.Values">
+                            <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+                            <value name="ncName">string</value>
+                          </record>
+                        </array>
+                      </record>
+                      <value name="form">true</value>
+                      <value name="internalType">instance</value>
+                    </record>
+                    <record javaclass="com.wm.util.Values">
+                      <value name="tagType">element</value>
+                      <value name="name">listedAs</value>
+                      <record name="type" javaclass="com.wm.util.Values">
+                        <value name="contentType">1</value>
+                        <value name="internalType">reference</value>
+                        <value name="dataTypeVersion">dtVersion2</value>
+                        <array name="targetNames" type="record" depth="1">
+                          <record javaclass="com.wm.util.Values">
+                            <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+                            <value name="ncName">string</value>
+                          </record>
+                        </array>
+                      </record>
+                      <value name="form">true</value>
+                      <value name="internalType">instance</value>
+                    </record>
+                    <record javaclass="com.wm.util.Values">
+                      <value name="tagType">element</value>
+                      <value name="name">amount</value>
+                      <record name="type" javaclass="com.wm.util.Values">
+                        <value name="contentType">1</value>
+                        <value name="internalType">reference</value>
+                        <value name="dataTypeVersion">dtVersion2</value>
+                        <array name="targetNames" type="record" depth="1">
+                          <record javaclass="com.wm.util.Values">
+                            <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+                            <value name="ncName">decimal</value>
+                          </record>
+                        </array>
+                      </record>
+                      <value name="form">true</value>
+                      <value name="internalType">instance</value>
+                    </record>
+                  </list>
+                  <list name="attributes">
+                  </list>
+                  <record name="contentModel" javaclass="com.wm.util.Values">
+                    <record name="symbol" javaclass="com.wm.util.Values">
+                      <value name="ncName">$$SEQUENCE</value>
+                    </record>
+                    <value name="minOccurs">1</value>
+                    <value name="maxOccurs">1</value>
+                    <value name="modelType">sequence</value>
+                    <list name="children">
+                      <record javaclass="com.wm.util.Values">
+                        <record name="symbol" javaclass="com.wm.util.Values">
+                          <value name="ncName">date</value>
+                        </record>
+                        <value name="minOccurs">1</value>
+                        <value name="maxOccurs">1</value>
+                        <value name="modelType">simple</value>
+                      </record>
+                      <record javaclass="com.wm.util.Values">
+                        <record name="symbol" javaclass="com.wm.util.Values">
+                          <value name="ncName">transactionDetails</value>
+                        </record>
+                        <value name="minOccurs">1</value>
+                        <value name="maxOccurs">1</value>
+                        <value name="modelType">simple</value>
+                      </record>
+                      <record javaclass="com.wm.util.Values">
+                        <record name="symbol" javaclass="com.wm.util.Values">
+                          <value name="ncName">listedAs</value>
+                        </record>
+                        <value name="minOccurs">1</value>
+                        <value name="maxOccurs">1</value>
+                        <value name="modelType">simple</value>
+                      </record>
+                      <record javaclass="com.wm.util.Values">
+                        <record name="symbol" javaclass="com.wm.util.Values">
+                          <value name="ncName">amount</value>
+                        </record>
+                        <value name="minOccurs">1</value>
+                        <value name="maxOccurs">1</value>
+                        <value name="modelType">simple</value>
+                      </record>
+                    </list>
+                  </record>
+                </record>
+                <value name="form">true</value>
+                <value name="internalType">instance</value>
+              </record>
+            </list>
+            <list name="attributes">
+            </list>
+            <record name="contentModel" javaclass="com.wm.util.Values">
+              <record name="symbol" javaclass="com.wm.util.Values">
+                <value name="ncName">$$SEQUENCE</value>
+              </record>
+              <value name="minOccurs">1</value>
+              <value name="maxOccurs">1</value>
+              <value name="modelType">sequence</value>
+              <list name="children">
+                <record javaclass="com.wm.util.Values">
+                  <record name="symbol" javaclass="com.wm.util.Values">
+                    <value name="ncName">firstName</value>
+                  </record>
+                  <value name="minOccurs">1</value>
+                  <value name="maxOccurs">1</value>
+                  <value name="modelType">simple</value>
+                </record>
+                <record javaclass="com.wm.util.Values">
+                  <record name="symbol" javaclass="com.wm.util.Values">
+                    <value name="ncName">surname</value>
+                  </record>
+                  <value name="minOccurs">1</value>
+                  <value name="maxOccurs">1</value>
+                  <value name="modelType">simple</value>
+                </record>
+                <record javaclass="com.wm.util.Values">
+                  <record name="symbol" javaclass="com.wm.util.Values">
+                    <value name="ncName">type</value>
+                  </record>
+                  <value name="minOccurs">1</value>
+                  <value name="maxOccurs">1</value>
+                  <value name="modelType">simple</value>
+                </record>
+                <record javaclass="com.wm.util.Values">
+                  <record name="symbol" javaclass="com.wm.util.Values">
+                    <value name="ncName">number</value>
+                  </record>
+                  <value name="minOccurs">1</value>
+                  <value name="maxOccurs">1</value>
+                  <value name="modelType">simple</value>
+                </record>
+                <record javaclass="com.wm.util.Values">
+                  <record name="symbol" javaclass="com.wm.util.Values">
+                    <value name="ncName">creditLimit</value>
+                  </record>
+                  <value name="minOccurs">1</value>
+                  <value name="maxOccurs">1</value>
+                  <value name="modelType">simple</value>
+                </record>
+                <record javaclass="com.wm.util.Values">
+                  <record name="symbol" javaclass="com.wm.util.Values">
+                    <value name="ncName">availableLimit</value>
+                  </record>
+                  <value name="minOccurs">1</value>
+                  <value name="maxOccurs">1</value>
+                  <value name="modelType">simple</value>
+                </record>
+                <record javaclass="com.wm.util.Values">
+                  <record name="symbol" javaclass="com.wm.util.Values">
+                    <value name="ncName">totalPending</value>
+                  </record>
+                  <value name="minOccurs">1</value>
+                  <value name="maxOccurs">1</value>
+                  <value name="modelType">simple</value>
+                </record>
+                <record javaclass="com.wm.util.Values">
+                  <record name="symbol" javaclass="com.wm.util.Values">
+                    <value name="ncName">balance</value>
+                  </record>
+                  <value name="minOccurs">1</value>
+                  <value name="maxOccurs">1</value>
+                  <value name="modelType">simple</value>
+                </record>
+                <record javaclass="com.wm.util.Values">
+                  <record name="symbol" javaclass="com.wm.util.Values">
+                    <value name="ncName">transactions</value>
+                  </record>
+                  <value name="minOccurs">0</value>
+                  <value name="maxOccurs">*</value>
+                  <value name="modelType">simple</value>
+                </record>
+              </list>
+            </record>
+          </record>
+          <value name="internalType">instance</value>
+          <value name="classname">com.wm.lang.schema.WmElement</value>
+        </record>
+      </list>
+    </record>
+    <record name="types" javaclass="com.wm.util.Values">
+      <list name="table">
+      </list>
+    </record>
+    <record name="uriReferencePrefixPairs" javaclass="com.wm.util.Values">
+      <value name="http://www.w3.org/2001/XMLSchema">xs</value>
+    </record>
+    <value name="originURI">file:///C:\work\Anatas\Devops Demo\cardTransactions.xsd</value>
+    <value name="modifiable">false</value>
+  </record>
+</Values>
